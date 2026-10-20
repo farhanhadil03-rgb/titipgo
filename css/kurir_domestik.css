@@ -1,0 +1,136 @@
+.courier-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 30px;
+}
+
+.courier-card {
+    padding: 32px;
+    min-height: 650px;
+}
+
+.courier-card h2 {
+    margin-bottom: 6px;
+}
+
+.courier-card p {
+    color: #8190a5;
+    margin-bottom: 34px;
+}
+
+.courier-card label {
+    display: block;
+    font-weight: 900;
+    margin: 24px 0 10px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.two-col input,
+.two-col select {
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+    padding: 15px;
+    color: #475569;
+    font-weight: 800;
+}
+
+.info-box {
+    border: 1px solid #dce4ee;
+    background: #f7fbfc;
+    border-radius: 12px;
+    padding: 18px;
+    color: #64748b;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.info-box.active {
+    border: 2px solid #2f63e8;
+    background: #f8fbff;
+}
+
+.info-box b {
+    color: #2f63e8;
+}
+
+.courier-option {
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 !important;
+}
+
+.courier-option.active {
+    border: 2px solid #2f63e8;
+    background: #eaf4ff;
+}
+
+.courier-option small {
+    display: block;
+    color: #8190a5;
+    margin-top: 6px;
+}
+
+.summary-card {
+    padding: 28px;
+    min-height: 650px;
+}
+
+.summary-card h2 {
+    margin-bottom: 28px;
+}
+
+.summary-row,
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: #8190a5;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.summary-row b {
+    color: #101827;
+    text-align: right;
+}
+
+.summary-row.green b {
+    color: #16bf83;
+}
+
+.summary-card hr {
+    border: 0;
+    border-top: 1px solid #e7ecf4;
+    margin: 26px 0;
+}
+
+.total-row b {
+    color: #2f63e8;
+    font-size: 22px;
+}
+
+.protect-box {
+    background: #dcfce7;
+    color: #166534;
+    padding: 18px;
+    border-radius: 14px;
+    line-height: 1.6;
+    margin: 34px 0 95px;
+}
+
+.summary-card .btn {
+    width: 100%;
+}
+
+@media(max-width: 900px) {
+    .courier-layout,
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,43 @@
+.review-card {
+    padding: 34px;
+    min-height: 650px;
+}
+
+.review-block {
+    margin-bottom: 34px;
+}
+
+.review-block h3 {
+    margin-bottom: 12px;
+}
+
+.stars {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.review-block input {
+    width: 100%;
+    border: 1px solid #dce4ee;
+    border-radius: 10px;
+    padding: 18px;
+    font-size: 14px;
+}
+
+.review-actions {
+    border-top: 1px solid #e7ecf4;
+    padding-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+}
+
+.review-actions .btn {
+    min-width: 210px;
+}
+
+@media(max-width: 700px) {
+    .review-actions {
+        flex-direction: column;
+    }
+}

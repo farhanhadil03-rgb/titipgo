@@ -1,0 +1,222 @@
+
+/* =========================================================
+   GLOBAL FULLSCREEN FIX
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--soft-bg, #f3fbfb);
+    color: var(--text, #101827);
+}
+
+body {
+    display: block;
+}
+
+.wrapper,
+.page-wrapper,
+.main-wrapper,
+.container,
+.nav-container,
+.section-container,
+.content-container,
+.guest-container {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar,
+.navbar-top,
+.top-nav,
+.guest-navbar,
+header {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar .container,
+.navbar-top .container,
+.top-nav .container,
+.guest-navbar .container,
+header .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+section,
+.hero,
+.work-section,
+.product-section,
+.security-section,
+.benefit-section {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero,
+.work-section,
+.product-section,
+.security-section,
+.benefit-section {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.product-banner,
+.dark-cta {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.work-section {
+    background: var(--soft-bg)
+}
+
+.pill-group {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 4px
+}
+
+.pill {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #eef3fb;
+    color: #7a8496;
+    font-size: 13px;
+    font-weight: 800
+}
+
+.pill.active {
+    background: #fff;
+    color: var(--text);
+    box-shadow: 0 5px 15px rgba(15,23,42,.08)
+}
+
+.timeline-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 18px rgba(15,23,42,.04);
+    border-radius: 22px;
+    padding: 55px 34px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 28px;
+    position: relative
+}
+
+.step-card {
+    text-align: center;
+    position: relative
+}
+
+.step-card::before {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: -50%;
+    width: 100%;
+    height: 4px;
+    background: #dbe7fb;
+    z-index: 0
+}
+
+.step-card:first-child::before {
+    display: none
+}
+
+.step-number {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #d9e8ff;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1
+}
+
+.step-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px
+}
+
+.step-card p {
+    color: var(--muted);
+    font-size: 14px
+}
+
+.step-icon {
+    margin: 24px auto 0;
+    border-radius: 12px;
+    width: 150px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    background: #fff4cc
+}
+
+.center-button {
+    text-align: center;
+    margin-top: 32px
+}
+
+@media(max-width:980px) {
+    .timeline-card {
+        grid-template-columns: 1fr
+    }
+    .step-card::before {
+        display: none
+    }
+}
+
+/* CARA KERJA FULLSCREEN LAYOUT */
+.work-section {
+    min-height: calc(100vh - 88px);
+    padding-top: 64px;
+    padding-bottom: 72px;
+}
+
+.timeline-card {
+    width: 100%;
+    max-width: none;
+}
+
+@media(max-width: 980px) {
+    .work-section {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

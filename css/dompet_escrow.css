@@ -1,0 +1,429 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3fbfb;
+    color: #101827;
+}
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background: #f3fbfb;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.sidebar {
+    background: #070724;
+    color: #ffffff;
+    padding: 38px 28px;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.hub {
+    font-size: 12px;
+    color: #90a0b9;
+    margin-top: 4px;
+    margin-bottom: 55px;
+}
+
+.menu {
+    display: grid;
+    gap: 30px;
+}
+
+.menu a {
+    color: #9aa8c0;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.menu a.active {
+    color: #f6d64a;
+}
+
+.main {
+    padding: 0;
+}
+
+.topbar {
+    height: 76px;
+    background: #ffffff;
+    border-bottom: 1px solid #e7ecf4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.topbar h1 {
+    font-size: 22px;
+}
+
+.user-link {
+    color: #101827;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.user-icon {
+    margin-left: 10px;
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.page-content {
+    padding: 32px 30px;
+}
+
+.wallet-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 30px;
+    align-items: start;
+}
+
+.wallet-main {
+    display: grid;
+    gap: 28px;
+}
+
+.wallet-side {
+    display: grid;
+    gap: 24px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e7ecf4;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.04);
+}
+
+.dark-card {
+    background: #0d1428;
+    color: #ffffff;
+}
+
+.dark-card p {
+    color: #9aa8c0;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.muted {
+    color: #8ca0b5;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 999px;
+    background: #2f63e8;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 13px 24px;
+    cursor: pointer;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #2f63e8;
+}
+
+.notice-green {
+    background: #ecfdf3;
+    border: 1px solid #c7f5d8;
+    color: #128454;
+    border-radius: 12px;
+    padding: 18px;
+    font-weight: 800;
+}
+
+.notice-red {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    border-radius: 12px;
+    padding: 18px;
+    font-weight: 800;
+}
+
+.stat-banner {
+    background: #2f63e8;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.stat-banner p {
+    color: #c7d8ff;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.stat-banner h2 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.stat-banner span {
+    color: #c7d8ff;
+    font-size: 14px;
+}
+
+.balance-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-box {
+    background: #ffffff;
+    border: 1px solid #dfe8f3;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.info-box span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-box h2 {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.info-box p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.withdraw-form-card {
+    scroll-margin-top: 100px;
+}
+
+.form-desc {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.withdraw-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.withdraw-form label {
+    font-weight: 900;
+    color: #101827;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #d7e0eb;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+.withdraw-form .btn {
+    grid-column: 1 / 4;
+}
+
+.transaction-list {
+    display: grid;
+    gap: 14px;
+}
+
+.transaction-card {
+    background: #ffffff;
+    border: 1px solid #e7ecf4;
+    border-radius: 12px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 1fr 170px 120px;
+    gap: 18px;
+    align-items: center;
+}
+
+.transaction-card b {
+    font-size: 15px;
+}
+
+.transaction-card p {
+    margin-top: 6px;
+}
+
+.transaction-price {
+    text-align: right;
+}
+
+.transaction-price strong {
+    color: #17bf83;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.status-green,
+.status-yellow,
+.status-red {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.status-green {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-yellow {
+    background: #fff4df;
+    color: #b86b00;
+}
+
+.status-red {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.detail-link {
+    color: #2f63e8;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: right;
+}
+
+.bank-card {
+    background: #f8fbfc;
+    border: 1px solid #e7ecf4;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 22px;
+}
+
+.bank-card b {
+    color: #2f63e8;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.bank-card p {
+    color: #64748b;
+    font-weight: 800;
+}
+
+.bank-card span {
+    display: block;
+    margin-top: 8px;
+    color: #101827;
+}
+
+.withdraw-row {
+    border-bottom: 1px solid #e7ecf4;
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.withdraw-row b {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.withdraw-row span {
+    color: #8ca0b5;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.empty-withdraw {
+    background: #f8fbfc;
+    border-radius: 12px;
+    padding: 18px;
+    color: #94a3b8;
+    font-weight: 800;
+}
+
+@media(max-width: 1100px) {
+    .wallet-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .balance-grid,
+    .withdraw-form,
+    .transaction-card {
+        grid-template-columns: 1fr;
+    }
+
+    .withdraw-form .btn {
+        grid-column: auto;
+    }
+
+    .transaction-price,
+    .detail-link {
+        text-align: left;
+    }
+}
+
+@media(max-width: 900px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .stat-banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

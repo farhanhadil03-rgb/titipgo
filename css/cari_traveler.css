@@ -1,0 +1,155 @@
+.traveler-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 30px;
+}
+
+.traveler-list {
+    padding: 30px;
+    min-height: 650px;
+}
+
+.section-title {
+    margin-bottom: 28px;
+}
+
+.section-title h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #8190a5;
+    font-weight: 700;
+}
+
+.traveler-card {
+    display: grid;
+    grid-template-columns: 64px 1fr 90px 110px 160px;
+    gap: 18px;
+    align-items: center;
+    border: 1px solid #e7ecf4;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 18px;
+    background: #ffffff;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.04);
+}
+
+.traveler-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #eaf4ff;
+    color: #2f63e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.traveler-info h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.traveler-info p {
+    color: #64748b;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.traveler-info span {
+    color: #18bf83;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.traveler-stat {
+    background: #f8fbfc;
+    border: 1px solid #e7ecf4;
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+}
+
+.traveler-stat b {
+    color: #2f63e8;
+    font-size: 22px;
+    display: block;
+}
+
+.traveler-stat small {
+    color: #8190a5;
+    font-weight: 800;
+}
+
+.success-stat b {
+    color: #18bf83;
+}
+
+.traveler-card .btn {
+    text-align: center;
+    text-decoration: none;
+}
+
+.summary-card {
+    background: #050047;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 30px;
+    min-height: 650px;
+}
+
+.summary-card h2 {
+    margin-bottom: 28px;
+}
+
+.summary-box {
+    background: #11185a;
+    border: 1px solid #1f2a74;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+.summary-box small {
+    display: block;
+    color: #98a8d2;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.summary-box b {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.security-note {
+    margin-top: 30px;
+    background: #172638;
+    color: #9fb0d0;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.security-note b {
+    color: #18bf83;
+}
+
+@media(max-width: 1000px) {
+    .traveler-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .traveler-card {
+        grid-template-columns: 64px 1fr;
+    }
+
+    .traveler-stat,
+    .traveler-card .btn {
+        grid-column: 1 / 3;
+    }
+}

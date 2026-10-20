@@ -1,0 +1,128 @@
+.chat-layout {
+    display: grid;
+    grid-template-columns: 1fr 330px;
+    gap: 28px;
+}
+
+.chat-card {
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.courier-head {
+    height: 74px;
+    border-bottom: 1px solid #e7ecf4;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 30px;
+}
+
+.courier-head small {
+    color: #17bf83;
+    font-weight: 900;
+}
+
+.message {
+    max-width: 360px;
+    padding: 16px;
+    border-radius: 12px;
+    margin: 20px 30px;
+    color: #64748b;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.message span {
+    float: right;
+    font-size: 11px;
+    color: #9aa8c0;
+    margin-left: 14px;
+}
+
+.left {
+    background: #f0f5f8;
+}
+
+.right {
+    background: #e8f2ff;
+    color: #3565be;
+    margin-left: auto;
+}
+
+.chat-input {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 38px;
+    background: #f8fbfc;
+    border: 1px solid #e5edf3;
+    border-radius: 999px;
+    padding: 15px 18px;
+    color: #9aa8c0;
+    font-weight: 700;
+}
+
+.chat-input span {
+    float: right;
+    background: #2f63e8;
+    color: #ffffff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.tracking-info {
+    padding: 28px;
+}
+
+.tracking-info h2 {
+    margin-bottom: 28px;
+}
+
+.map-box {
+    height: 180px;
+    background: #dfe6ef;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f63e8;
+    font-weight: 900;
+    margin-bottom: 28px;
+}
+
+.tracking-info h3 {
+    margin-bottom: 14px;
+}
+
+.info-box,
+.eta-box {
+    border: 1px solid #e7ecf4;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.eta-box {
+    background: #eaf4ff;
+    border-color: #cfe0ff;
+}
+
+.eta-box b {
+    color: #2f63e8;
+    font-size: 28px;
+}
+
+@media(max-width: 900px) {
+    .chat-layout {
+        grid-template-columns: 1fr;
+    }
+}

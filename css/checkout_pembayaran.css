@@ -1,0 +1,132 @@
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 30px;
+}
+
+.checkout-card {
+    padding: 30px;
+    min-height: 650px;
+}
+
+.checkout-card h2 {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.choice {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 16px;
+    background: #ffffff;
+}
+
+.choice.active {
+    border: 2px solid #2f63e8;
+    background: #eaf4ff;
+}
+
+.choice input {
+    width: 24px;
+    height: 24px;
+    accent-color: #2f63e8;
+}
+
+.choice b {
+    display: block;
+    color: #243b73;
+    margin-bottom: 6px;
+}
+
+.choice small {
+    color: #8190a5;
+    font-weight: 700;
+}
+
+.checkout-card hr {
+    border: 0;
+    border-top: 1px solid #e7ecf4;
+    margin: 32px 0;
+}
+
+.summary-card {
+    padding: 28px;
+    min-height: 650px;
+}
+
+.summary-card h2 {
+    margin-bottom: 24px;
+}
+
+.summary-box {
+    border: 1px solid #e7ecf4;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.summary-box p {
+    color: #8190a5;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.summary-box strong {
+    color: #2f63e8;
+}
+
+.protection {
+    background: #dcfce7;
+    color: #166534;
+    border-radius: 14px;
+    padding: 18px;
+    line-height: 1.6;
+    margin-bottom: 170px;
+}
+
+.summary-card .btn {
+    width: 100%;
+}
+
+@media(max-width: 900px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    margin: 14px 0;
+    color: #8190a5;
+    font-weight: 700;
+}
+
+.summary-row strong {
+    color: #101827;
+    text-align: right;
+}
+
+.summary-total {
+    border-top: 1px solid #e7ecf4;
+    margin-top: 18px;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: #101827;
+    font-weight: 900;
+}
+
+.summary-total strong {
+    color: #2f63e8;
+    font-size: 18px;
+    text-align: right;
+}

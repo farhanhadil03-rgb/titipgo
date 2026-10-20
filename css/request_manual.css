@@ -1,0 +1,157 @@
+.request-layout {
+    display: grid;
+    grid-template-columns: 1fr 370px;
+    gap: 30px;
+}
+
+.detail-card {
+    padding: 32px;
+    min-height: 650px;
+}
+
+.detail-card h2 {
+    margin-bottom: 28px;
+}
+
+.detail-card h3 {
+    margin-top: 32px;
+    margin-bottom: 18px;
+}
+
+.detail-card label {
+    display: block;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.detail-card input,
+.detail-card select,
+.detail-card textarea {
+    width: 100%;
+    border: 1px solid #dce4ee;
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+.detail-card textarea {
+    height: 95px;
+    resize: none;
+    background: #f2f7f8;
+}
+
+.file-input {
+    background: #f8fbfc !important;
+    color: #64748b;
+}
+
+.option-box {
+    display: grid !important;
+    grid-template-columns: 28px 1fr auto;
+    align-items: center;
+    gap: 16px;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 16px !important;
+}
+
+.option-box input {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.option-box small {
+    display: block;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+.red-option {
+    border: 2px solid #ff6b6b;
+}
+
+.red-option strong {
+    color: #ff4d4d;
+}
+
+.green-option {
+    border: 1px solid #d8f5df;
+    background: #eefcf1;
+}
+
+.payment-card {
+    background: #050047;
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    min-height: 650px;
+}
+
+.payment-card h2 {
+    margin-bottom: 34px;
+}
+
+.pay-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    color: #98a8d2;
+    margin-bottom: 26px;
+}
+
+.pay-row b {
+    color: #ffffff;
+    text-align: right;
+}
+
+.green-text b {
+    color: #18bf83;
+}
+
+.payment-card hr {
+    border: 0;
+    border-top: 1px solid #1f2a74;
+    margin: 30px 0;
+}
+
+.payment-card p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.payment-card h3 {
+    font-size: 30px;
+    color: #2f63e8;
+    margin: 10px 0 34px;
+}
+
+.payment-card .btn {
+    width: 100%;
+}
+
+.guarantee {
+    margin-top: 28px;
+    background: #172638;
+    color: #9fb0d0;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.guarantee b {
+    color: #18bf83;
+}
+
+.error-alert {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+@media(max-width: 900px) {
+    .request-layout {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,432 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3fbfb;
+    color: #101827;
+}
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background: #f3fbfb;
+    display: grid;
+    grid-template-columns: 230px 1fr;
+}
+
+.sidebar {
+    background: #070724;
+    color: #ffffff;
+    padding: 38px 28px;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.hub {
+    font-size: 12px;
+    color: #90a0b9;
+    margin-top: 4px;
+    margin-bottom: 55px;
+}
+
+.menu {
+    display: grid;
+    gap: 30px;
+}
+
+.menu a {
+    color: #9aa8c0;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.menu a.active {
+    color: #f6d64a;
+}
+
+.main {
+    padding: 0;
+}
+
+.topbar {
+    height: 76px;
+    background: #ffffff;
+    border-bottom: 1px solid #e7ecf4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.topbar h1 {
+    font-size: 22px;
+}
+
+.user-link {
+    color: #101827;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.user-icon {
+    margin-left: 10px;
+    font-size: 26px;
+    vertical-align: middle;
+}
+
+.page-content {
+    padding: 32px 30px;
+}
+
+.route-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 30px;
+    align-items: start;
+}
+
+.route-main {
+    display: grid;
+    gap: 28px;
+}
+
+.route-side {
+    display: grid;
+    gap: 24px;
+}
+
+.hero-route {
+    background: #245ceb;
+    color: #ffffff;
+    border-radius: 18px;
+    padding: 34px;
+}
+
+.page-label {
+    color: #dce8ff;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.7px;
+    margin-bottom: 8px;
+}
+
+.hero-route h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.hero-route p {
+    color: #c7d8ff;
+    line-height: 1.6;
+}
+
+.route-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.stat-box {
+    background: #ffffff;
+    border: 1px solid #e7ecf4;
+    border-radius: 14px;
+    padding: 24px;
+}
+
+.stat-box p {
+    color: #7b8798;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.stat-box h3 {
+    color: #2f63e8;
+    font-size: 34px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e7ecf4;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.04);
+}
+
+.dark-card {
+    background: #0d1428;
+    color: #ffffff;
+}
+
+.dark-card p {
+    color: #9aa8c0;
+    line-height: 1.6;
+    margin-top: 12px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.notice-green {
+    background: #ecfdf3;
+    border: 1px solid #c7f5d8;
+    color: #128454;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 22px;
+    font-weight: 800;
+}
+
+.notice-red {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 22px;
+    font-weight: 800;
+}
+
+.route-form label {
+    display: block;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    border: 1px solid #d7e0eb;
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    background: #ffffff;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-grid .full {
+    grid-column: 1 / 3;
+}
+
+.mini-title {
+    margin: 10px 0 14px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.category-option {
+    background: #f8fbfc;
+    border: 1px solid #e7ecf4;
+    border-radius: 999px;
+    padding: 12px 14px;
+    color: #2f63e8;
+    cursor: pointer;
+}
+
+.category-option input {
+    margin-right: 6px;
+}
+
+.status-options {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.status-option {
+    border: 1px solid #e7ecf4;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    color: #64748b;
+    font-weight: 800;
+}
+
+.status-option input {
+    margin-right: 8px;
+}
+
+.active-option {
+    border-color: #2f63e8;
+    background: #eaf4ff;
+    color: #2f63e8;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 999px;
+    background: #2f63e8;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 13px 24px;
+    cursor: pointer;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn-dark {
+    background: #101527;
+}
+
+.route-list {
+    display: grid;
+    gap: 16px;
+}
+
+.empty-route {
+    background: #f8fbfc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 22px;
+    color: #64748b;
+    font-weight: 800;
+}
+
+.route-card {
+    border: 1px solid #e7ecf4;
+    border-radius: 14px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 170px;
+    gap: 18px;
+    align-items: center;
+    background: #ffffff;
+}
+
+.route-card h3 {
+    color: #2f63e8;
+    margin-bottom: 8px;
+}
+
+.route-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.route-off {
+    opacity: 0.65;
+    background: #f8fafc;
+}
+
+.route-action {
+    display: grid;
+    gap: 12px;
+}
+
+.status-badge {
+    display: inline-block;
+    border-radius: 999px;
+    padding: 9px 12px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.status-active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-inactive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.example-route {
+    background: #f8fbfc;
+    border: 1px solid #e7ecf4;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+.example-route b {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.example-route span {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.info-box {
+    background: #f8fbfc;
+    border: 1px solid #dfe8f3;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.info-box p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+
+@media(max-width: 1100px) {
+    .route-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 900px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .topbar {
+        height: auto;
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .route-stats,
+    .form-grid,
+    .route-card,
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid .full {
+        grid-column: auto;
+    }
+}

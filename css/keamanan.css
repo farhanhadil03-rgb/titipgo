@@ -1,0 +1,185 @@
+
+/* =========================================================
+   GLOBAL FULLSCREEN FIX
+   ========================================================= */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--soft-bg, #f3fbfb);
+    color: var(--text, #101827);
+}
+
+body {
+    display: block;
+}
+
+.wrapper,
+.page-wrapper,
+.main-wrapper,
+.container,
+.nav-container,
+.section-container,
+.content-container,
+.guest-container {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar,
+.navbar-top,
+.top-nav,
+.guest-navbar,
+header {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar .container,
+.navbar-top .container,
+.top-nav .container,
+.guest-navbar .container,
+header .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+section,
+.hero,
+.work-section,
+.product-section,
+.security-section,
+.benefit-section {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero,
+.work-section,
+.product-section,
+.security-section,
+.benefit-section {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}
+
+.product-banner,
+.dark-cta {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.security-section {
+    background: var(--soft-bg);
+    padding-top: 64px;
+    padding-bottom: 76px
+}
+
+.shield {
+    font-size: 42px;
+    margin-bottom: 12px
+}
+
+.security-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 26px;
+    max-width: 920px;
+    margin: 0 auto
+}
+
+.security-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    box-shadow: 0 5px 18px rgba(15,23,42,.04);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 24px
+}
+
+.security-icon {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    background: #e8f5ff
+}
+
+.security-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px
+}
+
+.security-card p {
+    color: var(--muted);
+    font-size: 14px
+}
+
+.dark-cta {
+    width: min(1180px,100%);
+    margin: 0 auto;
+    background: #1d2938;
+    color: #fff;
+    padding: 32px 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px
+}
+
+@media(max-width:980px) {
+    .security-grid {
+        grid-template-columns: 1fr
+    }
+    .dark-cta {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 24px;
+        padding-right: 24px
+    }
+}
+
+/* KEAMANAN FULLSCREEN LAYOUT */
+.security-section {
+    min-height: calc(100vh - 190px);
+}
+
+.security-grid {
+    width: 100%;
+    max-width: none;
+}
+
+.dark-cta {
+    padding-left: 7vw;
+    padding-right: 7vw;
+}

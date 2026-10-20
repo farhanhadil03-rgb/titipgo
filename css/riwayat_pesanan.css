@@ -1,0 +1,289 @@
+/* RIWAYAT PESANAN PAGE */
+
+.history-header {
+    background: #ffffff;
+    border: 1px solid #e7ecf4;
+    border-radius: 16px;
+    padding: 26px 30px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.04);
+}
+
+.history-header h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #101827;
+}
+
+.history-header p {
+    color: #8190a5;
+    font-weight: 700;
+    line-height: 1.6;
+}
+
+.primary-action {
+    background: #2f63e8;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.history-list {
+    display: grid;
+    gap: 18px;
+}
+
+.history-card {
+    background: #ffffff;
+    border: 1px solid #e7ecf4;
+    border-radius: 16px;
+    padding: 22px;
+    display: grid;
+    grid-template-columns: 70px 1fr 190px 360px;
+    align-items: center;
+    gap: 20px;
+    color: #101827;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.04);
+}
+
+.product-thumb {
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    background: #eaf4ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.history-info h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.history-info p {
+    color: #8190a5;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.price-box {
+    text-align: right;
+}
+
+.price-box small {
+    display: block;
+    color: #8190a5;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.price-box strong {
+    color: #2f63e8;
+    font-size: 20px;
+}
+
+.status {
+    display: inline-block;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.done {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.refund {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.track {
+    background: #ffffff;
+    border: 2px solid #b8d0ff;
+    color: #2f63e8;
+}
+
+.process {
+    background: #eaf4ff;
+    color: #2f63e8;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.history-btn {
+    border-radius: 999px;
+    padding: 10px 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.history-btn:hover {
+    transform: translateY(-2px);
+}
+
+.detail-btn {
+    background: #eaf4ff;
+    color: #2f63e8;
+}
+
+.tracking-btn {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.repeat-btn {
+    background: #fff8e6;
+    color: #d68a21;
+}
+
+.invoice-btn {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.review-btn {
+    background: #2f63e8;
+    color: #ffffff;
+    grid-column: 1 / 3;
+}
+
+@media(max-width: 1100px) {
+    .history-card {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .price-box {
+        text-align: left;
+    }
+
+    .action-grid {
+        grid-column: 1 / 3;
+    }
+}
+
+@media(max-width: 700px) {
+    .history-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-card {
+        grid-template-columns: 1fr;
+    }
+
+    .action-grid {
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .review-btn {
+        grid-column: auto;
+    }
+
+    .primary-action {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* INVOICE DOWNLOAD POPUP */
+.invoice-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(7, 7, 36, 0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.invoice-popup.show {
+    display: flex;
+}
+
+.invoice-popup-box {
+    width: 390px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 34px 28px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.25);
+    animation: popupFade 0.25s ease-in-out;
+}
+
+.popup-icon {
+    width: 68px;
+    height: 68px;
+    background: #dcfce7;
+    color: #16a34a;
+    border-radius: 50%;
+    margin: 0 auto 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.invoice-popup-box h2 {
+    color: #101827;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.invoice-popup-box p {
+    color: #64748b;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.invoice-popup-box button {
+    width: 100%;
+    border: none;
+    background: #2f63e8;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 13px 22px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.invoice-popup-box button:hover {
+    background: #2454cf;
+}
+
+@keyframes popupFade {
+    from {
+        opacity: 0;
+        transform: translateY(14px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
